@@ -26,17 +26,29 @@ BuildRequires:	perl-HTTP-Date >= 6
 BuildRequires:	perl-MIME-Base64 >= 1
 BuildRequires:	perl-IO-Compress
 BuildRequires:	perl-URI >= 1.10
-#BuildRequires:	perl(LWP::MediaTypes) (causes loop)
+BuildRequires:	perl-LWP-MediaTypes >= 6
 %endif
+Requires:	perl-Encode >= 2.12
+Requires:	perl-Encode-Locale >= 1
+Requires:	perl-HTTP-Date >= 6
+Requires:	perl-MIME-Base64 >= 1
+Requires:	perl-URI >= 1.10
+Requires:	perl-LWP-MediaTypes >= 6
 Conflicts:	perl-libwww < 6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-An HTTP::Message object contains some headers and a content body.
+The HTTP-Message distribution contains classes useful for representing
+the messages passed in HTTP style communication. These are classes
+representing requests (HTTP::Request), responses (HTTP::Response) and
+the headers (HTTP::Headers) contained within them.
 
 %description -l pl.UTF-8
-Obiekt HTTP::Message składa się z nagłówków i treści.
+Pakiet HTML-Message zawiera klasy do reprezentacji komunikatów
+przekazywanych w komunikacji w stylu HTTP. Zawiera klasy
+reprezentujące żądania (HTTP::Request), odpowiedzi (HTTP::Response) i
+nagłówki (HTTP::Headers).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
