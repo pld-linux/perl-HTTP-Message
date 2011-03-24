@@ -8,13 +8,13 @@
 Summary:	HTTP::Message - HTTP style message
 Summary(pl.UTF-8):	HTTP::Message - komunikacja w stylu HTTP
 Name:		perl-HTTP-Message
-Version:	6.01
+Version:	6.02
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/HTTP/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	186d35ca521858cd661c54504ad73f0a
+# Source0-md5:	a6b28e44f7b5e5573362f042d522a456
 URL:		http://search.cpan.org/dist/HTTP-Message/
 BuildRequires:	perl-devel >= 1:5.8.8
 BuildRequires:	rpm-perlprov >= 4.1-13
