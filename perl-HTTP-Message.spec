@@ -8,13 +8,13 @@
 Summary:	HTTP::Message - HTTP style message
 Summary(pl.UTF-8):	HTTP::Message - komunikacja w stylu HTTP
 Name:		perl-HTTP-Message
-Version:	6.02
+Version:	6.03
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/HTTP/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a6b28e44f7b5e5573362f042d522a456
+# Source0-md5:	d41b22c7c01b974f2b4e85d401a6b552
 URL:		http://search.cpan.org/dist/HTTP-Message/
 BuildRequires:	perl-devel >= 1:5.8.8
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -23,15 +23,15 @@ BuildRequires:	perl-Encode >= 2.12
 BuildRequires:	perl-Encode-Locale >= 1
 BuildRequires:	perl-HTML-Parser >= 3.33
 BuildRequires:	perl-HTTP-Date >= 6
-BuildRequires:	perl-MIME-Base64 >= 1
-BuildRequires:	perl-IO-Compress
+BuildRequires:	perl-MIME-Base64 >= 2.1
+BuildRequires:	perl-IO-Compress >= 2.021
 BuildRequires:	perl-URI >= 1.10
 BuildRequires:	perl-LWP-MediaTypes >= 6
 %endif
 Requires:	perl-Encode >= 2.12
 Requires:	perl-Encode-Locale >= 1
 Requires:	perl-HTTP-Date >= 6
-Requires:	perl-MIME-Base64 >= 1
+Requires:	perl-MIME-Base64 >= 2.1
 Requires:	perl-URI >= 1.10
 Requires:	perl-LWP-MediaTypes >= 6
 Conflicts:	perl-libwww < 6
