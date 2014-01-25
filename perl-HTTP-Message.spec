@@ -9,7 +9,7 @@ Summary:	HTTP::Message - HTTP style message
 Summary(pl.UTF-8):	HTTP::Message - komunikacja w stylu HTTP
 Name:		perl-HTTP-Message
 Version:	6.06
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -32,6 +32,7 @@ BuildRequires:	perl-LWP-MediaTypes >= 6
 Requires:	perl-Encode >= 2.21
 Requires:	perl-Encode-Locale >= 1
 Requires:	perl-HTTP-Date >= 6
+Requires:	perl-IO-HTML
 Requires:	perl-MIME-Base64 >= 2.1
 Requires:	perl-URI >= 1.10
 Requires:	perl-LWP-MediaTypes >= 6
