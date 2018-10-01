@@ -8,13 +8,13 @@
 Summary:	HTTP::Message - HTTP style message
 Summary(pl.UTF-8):	HTTP::Message - komunikacja w stylu HTTP
 Name:		perl-HTTP-Message
-Version:	6.06
-Release:	2
+Version:	6.18
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/HTTP/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e563ac516e28d33f65bc0f295f625f85
+# Source0-md5:	9fd400da24e1784f85d32de1705fc795
 URL:		http://search.cpan.org/dist/HTTP-Message/
 BuildRequires:	perl-devel >= 1:5.8.8
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -23,11 +23,13 @@ BuildRequires:	perl-Encode >= 2.21
 BuildRequires:	perl-Encode-Locale >= 1
 BuildRequires:	perl-HTML-Parser >= 3.33
 BuildRequires:	perl-HTTP-Date >= 6
+BuildRequires:	perl-LWP-MediaTypes >= 6
 BuildRequires:	perl-MIME-Base64 >= 2.1
 BuildRequires:	perl-IO-Compress >= 2.021
 BuildRequires:	perl-IO-HTML
+BuildRequires:	perl-Test-Simple >= 0.88
+BuildRequires:	perl-Try-Tiny
 BuildRequires:	perl-URI >= 1.10
-BuildRequires:	perl-LWP-MediaTypes >= 6
 %endif
 Requires:	perl-Encode >= 2.21
 Requires:	perl-Encode-Locale >= 1
@@ -73,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc CONTRIBUTORS Changes README.md
 %{perl_vendorlib}/HTTP/Config.pm
 %{perl_vendorlib}/HTTP/Headers.pm
 %{perl_vendorlib}/HTTP/Headers
