@@ -4,7 +4,6 @@
 #
 %define		pdir	HTTP
 %define		pnam	Message
-%include	/usr/lib/rpm/macros.perl
 Summary:	HTTP::Message - HTTP style message
 Summary(pl.UTF-8):	HTTP::Message - komunikacja w stylu HTTP
 Name:		perl-HTTP-Message
