@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	HTTP
 %define		pnam	Message
@@ -14,18 +14,20 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/HTTP/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	3b4b64fff4885429b997390564521db0
-URL:		http://search.cpan.org/dist/HTTP-Message/
+URL:		https://metacpan.org/release/HTTP-Message
 BuildRequires:	perl-devel >= 1:5.8.8
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
+BuildRequires:	perl(Exporter) >= 5.57
 BuildRequires:	perl-Encode >= 3.01
 BuildRequires:	perl-Encode-Locale >= 1
 BuildRequires:	perl-HTML-Parser >= 3.33
 BuildRequires:	perl-HTTP-Date >= 6
-BuildRequires:	perl-LWP-MediaTypes >= 6
-BuildRequires:	perl-MIME-Base64 >= 2.1
 BuildRequires:	perl-IO-Compress >= 2.021
 BuildRequires:	perl-IO-HTML
+BuildRequires:	perl-LWP-MediaTypes >= 6
+BuildRequires:	perl-MIME-Base64 >= 2.1
 BuildRequires:	perl-Test-Simple >= 0.88
 BuildRequires:	perl-Try-Tiny
 BuildRequires:	perl-URI >= 1.10
@@ -74,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CONTRIBUTORS Changes README.md
+%doc CONTRIBUTORS Changes
 %{perl_vendorlib}/HTTP/Config.pm
 %{perl_vendorlib}/HTTP/Headers.pm
 %{perl_vendorlib}/HTTP/Headers
