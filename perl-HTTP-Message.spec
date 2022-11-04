@@ -20,9 +20,10 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl(Exporter) >= 5.57
+BuildRequires:	perl-Clone >= 0.46
+BuildRequires:	perl-Compress-Raw-Zlib >= 2.062
 BuildRequires:	perl-Encode >= 3.01
 BuildRequires:	perl-Encode-Locale >= 1
-BuildRequires:	perl-HTML-Parser >= 3.33
 BuildRequires:	perl-HTTP-Date >= 6
 BuildRequires:	perl-IO-Compress >= 2.021
 BuildRequires:	perl-IO-HTML
