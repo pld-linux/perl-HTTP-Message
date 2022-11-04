@@ -33,6 +33,7 @@ BuildRequires:	perl-Test-Simple >= 0.88
 BuildRequires:	perl-Try-Tiny
 BuildRequires:	perl-URI >= 1.10
 %endif
+Requires:	perl-Clone >= 0.46
 Requires:	perl-Encode >= 3.01
 Requires:	perl-Encode-Locale >= 1
 Requires:	perl-HTTP-Date >= 6
