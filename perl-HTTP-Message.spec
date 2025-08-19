@@ -29,6 +29,7 @@ BuildRequires:	perl-IO-Compress >= 2.021
 BuildRequires:	perl-IO-HTML
 BuildRequires:	perl-LWP-MediaTypes >= 6
 BuildRequires:	perl-MIME-Base64 >= 2.1
+BuildRequires:	perl-Test-Needs
 BuildRequires:	perl-Test-Simple >= 0.88
 BuildRequires:	perl-Try-Tiny
 BuildRequires:	perl-URI >= 1.10
